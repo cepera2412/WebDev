@@ -1,0 +1,62 @@
+.footer {
+	padding: 87px 0;
+	background: $main-bg;
+	&__container {
+		@extend %fw-sb;
+	}
+	&__text-list {
+		@extend %fw-c;
+		gap: 60px;
+	}
+
+	&__text-link {
+		transition: all 0.3s ease-in;
+
+		&:hover,
+		&:focus {
+			opacity: 0.5;
+		}
+
+		&:active {
+			color: $accent-clr;
+		}
+	}
+
+	&__icon-list {
+		@extend %fw-c;
+		gap: 23px;
+	}
+
+	&__icon-img {
+		background-color: $accent-clr;
+		border-radius: 50%;
+
+		transition: all 0.5s ease;
+
+		&:hover,
+		&:focus {
+			filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.8)) grayscale(50%);
+		}
+
+		&:active {
+			filter: brightness(150%);
+		}
+	}
+}
+
+//
+
+//
+
+// ///////////////////////////// media
+@media (max-width: 999px) {
+	.footer {
+		&__container {
+			@include flex-column(40px);
+		}
+
+		&__text-list {
+			gap: clamp(1.25rem, 0.547rem + 3.125vw, 2.5rem);
+		}
+	}
+}

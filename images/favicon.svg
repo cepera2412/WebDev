@@ -1,0 +1,25 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient id="paint_linear_403_5_0" x1="39.999996" y1="-2.375000" x2="0.000000" y2="42.375004" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#00BDEC"/>
+			<stop offset="0.531250" stop-color="#00AAE1"/>
+			<stop offset="1.000000" stop-color="#436CFF"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_403_6_0" x1="32.000004" y1="6.574997" x2="8.000008" y2="33.424999" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#436CFF"/>
+			<stop offset="0.531250" stop-color="#00AAE1"/>
+			<stop offset="1.000000" stop-color="#00BDEC"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_403_7_0" x1="27.199989" y1="11.944993" x2="12.799990" y2="28.054996" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#00BDEC"/>
+			<stop offset="0.531250" stop-color="#00AAE1"/>
+			<stop offset="1.000000" stop-color="#436CFF"/>
+		</linearGradient>
+	</defs>
+	<circle cx="20.000000" cy="20.000000" r="20.000000" fill="url(#paint_linear_403_5_0)" fill-opacity="1.000000"/>
+	<circle cx="20.000000" cy="20.000000" r="12.000000" fill="url(#paint_linear_403_6_0)" fill-opacity="1.000000"/>
+	<circle cx="19.999985" cy="20.000000" r="7.200000" fill="url(#paint_linear_403_7_0)" fill-opacity="1.000000"/>
+</svg>

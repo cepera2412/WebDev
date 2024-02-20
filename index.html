@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Web setting -->
+		<title>Professional development</title>
+		<meta name="description" content="" />
+		<link rel="shortcut icon" href="images/favicon.svg" type="image/png" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- Header -->
+			<header class="header">
+				<div class="container">
+					<nav class="header__menu">
+						<a class="header__menu-logo" href="./index.html">
+							<img
+								src="images/Logo.svg"
+								alt="logo"
+								class="header__menu-logo-img"
+								width="40"
+							/>
+							<p class="header__menu-logo-text">WebDev</p>
+						</a>
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a href="#About" class="header__menu-link"> About me </a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#services" class="header__menu-link">Services</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#!" class="header__menu-link">Portfolio</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#contact" class="header__menu-link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- Menu - Mobile -->
+				<div class="header__menu-mobile">
+					<button onclick="toggleDropdown()" class="header__menu-mobile-btn">
+						<svg
+							width="30"
+							height="17"
+							viewBox="0 0 30 17"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect width="30" height="3" rx="1" fill="#009dff" />
+							<rect y="7" width="30" height="3" rx="1" fill="#009dff" />
+							<rect y="14" width="21.2195" height="3" rx="1" fill="#009dff" />
+						</svg>
+					</button>
+					<div id="menu" class="header__menu-list disp">
+						<a href="#About" class="header__menu-link block"> About me </a>
+						<a href="#services" class="header__menu-link block"> Services </a>
+						<a href="#!" class="header__menu-link block"> Portfolio </a>
+						<a href="#contact" class="header__menu-link block"> Contact </a>
+					</div>
+				</div>
+				<!-- end menu - mobile -->
+			</header>
+			<!-- End HEADER -->
+
+			<main class="main">
+				<!--  -->
+
+				<!-- HERO -->
+				<section class="hero">
+					<div class="container">
+						<h1 class="hero__title">
+							<span class="hero__title-span">Professional</span> development of
+							websites
+						</h1>
+						<p class="hero__text">
+							Leading digital developer with solid design and development
+							expertise. We build readymade websites mobile AND applications
+						</p>
+						<a href="#services" class="hero__btn"> Services </a>
+					</div>
+				</section>
+				<!-- end Hero -->
+
+				<!-- Why -->
+				<section class="why" id="About">
+					<div class="container">
+						<div class="why__container">
+							<h2 class="why__container-title">Why do people choose me?</h2>
+							<p class="why__container-text">
+								Hi. My name is
+								<span class="why__container-text-name">Mark</span> . <br />
+								I am a
+								<span class="why__container-text-prof">web developer</span> with
+								7 years of experience.
+							</p>
+						</div>
+						<div class="why__content">
+							<div class="why__card">
+								<ul class="why__card-list">
+									<li class="why__card-item">
+										<img
+											src="./images/icon1.svg"
+											alt="puzzle"
+											class="why__card-img"
+										/>
+										<h3 class="why__card-title">Attention to detail</h3>
+										<p class="why__card-text">
+											Thorough study of layouts and specifics of display on
+											various devices
+										</p>
+									</li>
+									<li class="why__card-item">
+										<img
+											src="./images/icon2.svg"
+											alt="figure"
+											class="why__card-img"
+										/>
+										<h3 class="why__card-title">Modern tools</h3>
+										<p class="why__card-text">
+											Tracking and applying modern technologies and web design
+											trends
+										</p>
+									</li>
+									<li class="why__card-item">
+										<img
+											src="./images/icon3.svg"
+											alt="reward"
+											class="why__card-img"
+										/>
+										<h3 class="why__card-title">100% reputation</h3>
+										<p class="why__card-text">
+											It is important for me not only to hand over the project,
+											but to make it high quality
+										</p>
+									</li>
+									<li class="why__card-item">
+										<img
+											src="./images/icon4.svg"
+											alt="like"
+											class="why__card-img"
+										/>
+										<h3 class="why__card-title">No failures</h3>
+										<p class="why__card-text">
+											I do not miss deadlines and often close projects ahead of
+											schedule
+										</p>
+									</li>
+								</ul>
+							</div>
+							<img
+								src="./images/person.jpeg"
+								alt="portrait"
+								class="hy__content-img"
+							/>
+						</div>
+					</div>
+				</section>
+				<!-- end Why -->
+
+				<!-- Services -->
+				<section class="services" id="services">
+					<div class="container">
+						<div class="services__inner">
+							<div class="services__card">
+								<a href="#!" class="services__card-item">
+									<img
+										src="./images/services1.svg"
+										alt="Applications"
+										class="services__card-img"
+									/>
+									<h3 class="services__card-title">Applications</h3>
+									<p class="services__card-text">learn more</p>
+								</a>
+								<a href="#!" class="services__card-item">
+									<img
+										src="./images/services2.svg"
+										alt="Landings"
+										class="services__card-img"
+									/>
+									<h3 class="services__card-title">Landings</h3>
+									<p class="services__card-text"></p>
+								</a>
+								<a href="#!" class="services__card-item">
+									<img
+										src="./images/services3.svg"
+										alt="E-commerce"
+										class="services__card-img"
+									/>
+									<h3 class="services__card-title">E-commerce</h3>
+									<p class="services__card-text">learn more</p>
+								</a>
+								<a href="#!" class="services__card-item services__card-bg">
+									<h3 class="services__card-title">
+										browse all <br />
+										my services
+									</h3>
+								</a>
+							</div>
+							<div class="services__content">
+								<h2 class="services__content-title">My services</h2>
+								<p class="services__content-text">
+									Working on the site, I try to make it not only visually
+									pleasing and modern, but also convenient, as well as complying
+									with all the rules of web development.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end services -->
+
+				<!-- Contacts -->
+				<section class="contacts" id="contact">
+					<div class="container">
+						<h2 class="contacts__title">Contacts</h2>
+						<address class="contacts__address">
+							<div class="contacts__address-left">
+								<div class="contacts__address-work">
+									<p class="contacts__address-work-text">Working hours</p>
+									<p class="contacts__address-work-time">
+										Mon-Sat from 9:00 to 21:00
+									</p>
+								</div>
+								<div class="contacts__address-mail">
+									<p class="contacts__address-mail-text">Mail</p>
+									<a
+										href="mailto:devmark@gmail.com"
+										class="contacts__address-mail-link"
+										>devmark@gmail.com</a
+									>
+								</div>
+								<div class="contacts__address-soc">
+									<p class="contacts__address-soc-text">Messengers</p>
+									<a
+										href="https://telegram.org/"
+										target="_blank"
+										class="contacts__address-soc-link"
+										>Telegram</a
+									>
+								</div>
+							</div>
+							<div class="contacts__address-right">
+								<div class="contacts__address-office">
+									<p class="contacts__address-office-text">Office address</p>
+									<p class="contacts__address-office-desc">
+										984 N Pitt Str., Suite 198 Alexandria, VA 16344, USA
+									</p>
+								</div>
+								<div class="contacts__address-map">
+									<p class="contacts__address-map-text">
+										Find me faster with google map
+									</p>
+									<a
+										href="https://maps.app.goo.gl/E7XGLWQodQAjmTKu7"
+										target="_blank"
+										class="contacts__address-map-btn"
+										>Go to google maps</a
+									>
+								</div>
+							</div>
+						</address>
+					</div>
+				</section>
+				<!-- end Contacts -->
+			</main>
+
+			<!-- FOOTER -->
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__container">
+						<ul class="footer__text-list">
+							<li class="footer__text-item">
+								<a href="" class="footer__text-link"> Privacy Policy </a>
+							</li>
+							<li class="footer__text-item">
+								<a href="" class="footer__text-link"
+									>Personal data processing policy
+								</a>
+							</li>
+							<li class="footer__text-item">
+								<a href="" class="footer__text-link"> Public offer </a>
+							</li>
+						</ul>
+						<ul class="footer__icon-list">
+							<li class="footer__icon-item">
+								<a
+									href="https://www.instagram.com/"
+									target="_blank"
+									class="footer__icon-link"
+									><img
+										src="./images/inst.svg"
+										alt="inst"
+										class="footer__icon-img"
+								/></a>
+							</li>
+							<li class="footer__icon-item">
+								<a
+									href="https://www.behance.net/"
+									target="_blank"
+									class="footer__icon-link"
+									><img
+										src="./images/behance.svg"
+										alt="behance"
+										class="footer__icon-img"
+								/></a>
+							</li>
+							<li class="footer__icon-item">
+								<a
+									href="https://dribbble.com/"
+									target="_blank"
+									class="footer__icon-link"
+									><img
+										src="./images/dribble.svg"
+										alt="dribble"
+										class="footer__icon-img"
+								/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<!-- end footer -->
+		</div>
+
+		<!-- Scripts -->
+		<script src="app/main.js"></script>
+		<!-- end Scripts -->
+	</body>
+</html>

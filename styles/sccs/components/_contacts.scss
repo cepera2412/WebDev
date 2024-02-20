@@ -1,0 +1,129 @@
+.contacts {
+	padding: 120px 0;
+	text-transform: lowercase;
+
+	&__title {
+		text-align: center;
+		font-size: $f-size-xl;
+		color: $black-clr;
+	}
+
+	&__address {
+		max-width: 1030px;
+		margin: 41px auto 0;
+		@include grid(2, 1fr, 1, 1fr, 0);
+
+		&-left {
+			padding-right: 30px;
+			justify-self: start;
+			@include flex-column(40px);
+		}
+
+		&-mail-link {
+			transition: color 0.3s ease;
+
+			&:hover,
+			&:focus {
+				color: $accent-clr;
+			}
+
+			&:active {
+				color: $active-clr;
+				border-bottom: 1px solid $active-clr;
+			}
+		}
+
+		&-soc-link {
+			transition: color 0.3s linear;
+
+			&:hover,
+			&:focus {
+				color: $accent-clr;
+			}
+
+			&:active {
+				color: $active-clr;
+				border-bottom: 1px solid $active-clr;
+			}
+		}
+
+		&-work-time,
+		&-mail-link,
+		&-soc-link,
+		&-office-desc {
+			margin-top: 8px;
+			color: $black-clr;
+			font-size: $f-size-md;
+			font-weight: 500;
+		}
+
+		&-right {
+			padding-left: 50px;
+			justify-self: end;
+			@include flex-column(40px);
+		}
+
+		&-map-btn {
+			@extend %button;
+			max-width: 309px;
+			margin: 0;
+			margin-top: 18px;
+
+			transition: all 0.3s ease-in;
+
+			&:hover,
+			&:focus {
+				text-decoration-line: underline;
+				opacity: 0.8;
+			}
+
+			&:active {
+				color: $white-clr;
+				background-color: $active-btn;
+			}
+		}
+	}
+}
+
+//
+
+//
+
+//////////////////////////////////// media
+@media (max-width: 999px) {
+	.contacts {
+		padding: clamp(5rem, 3.594rem + 6.25vw, 7.5rem) 0;
+		font-size: clamp(12px, 0.574rem + 0.781vw, $f-size-sm);
+
+		&__title {
+			font-size: clamp($f-size-md, 0.656rem + 3.75vw, $f-size-xl);
+		}
+
+		&__address {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			gap: clamp(1.25rem, 0.547rem + 3.125vw, 2.5rem);
+
+			&-left {
+				padding: 0;
+			}
+
+			&-right {
+				padding: 0;
+			}
+
+			&-work-time,
+			&-mail-link,
+			&-soc-link,
+			&-office-desc {
+				font-size: clamp(14px, 0.523rem + 1.563vw, $f-size-md);
+			}
+
+			&-map-btn {
+				margin: 10px auto;
+				font-size: clamp(14px, 0.523rem + 1.563vw, $f-size-md);
+			}
+		}
+	}
+}

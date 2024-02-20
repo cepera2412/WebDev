@@ -1,0 +1,65 @@
+.hero {
+	padding: 120px 0 131px;
+	background-color: $main-bg;
+	text-align: center;
+
+	&__title {
+		font-size: $f-size-xxl;
+		font-weight: 700;
+		line-height: 1.22;
+		letter-spacing: 1%;
+		text-transform: lowercase;
+
+		&-span {
+			color: $accent-clr;
+		}
+	}
+
+	&__text {
+		margin: 40px auto;
+		max-width: 816px;
+		font-size: $f-size-md;
+	}
+
+	&__btn {
+		@extend %button;
+		width: 100%;
+		transition: all 0.3s ease-in;
+
+		&:hover,
+		&:focus {
+			opacity: 0.7;
+		}
+
+		&:active {
+			color: $black-clr;
+			background-color: $active-bg;
+		}
+	}
+}
+
+//
+
+//
+
+// Media
+
+@media (max-width: 999px) {
+	.hero {
+		padding-top: clamp(5rem, -0.313rem + 12.5vw, 7.5rem);
+		padding-bottom: clamp(5rem, -1.773rem + 15.937vw, 8.188rem);
+
+		&__title {
+			font-size: clamp(32px, -0.039rem + 9.063vw, $f-size-xxl);
+		}
+
+		&__text {
+			max-width: clamp(20rem, 2.563rem + 77.5vw, 51rem);
+			font-size: clamp(14px, 0.523rem + 1.563vw, $f-size-md);
+		}
+
+		&__btn {
+			font-size: clamp(14px, 0.523rem + 1.563vw, $f-size-md);
+		}
+	}
+}

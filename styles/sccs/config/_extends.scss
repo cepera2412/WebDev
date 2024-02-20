@@ -1,0 +1,33 @@
+%fw-c {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+%fw-sb {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+%f-col-c {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+%button {
+	display: block;
+	margin: 0 auto;
+	border-radius: 15px;
+	background: $main-btn;
+	color: $accent-clr;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: $f-size-md;
+	padding: 12px;
+	max-width: 240px;
+	width: 100%;
+}

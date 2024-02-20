@@ -1,0 +1,24 @@
+@mixin grid($column, $size-column, $row, $size-row, $gap) {
+	display: grid;
+	grid-template-columns: repeat($column, $size-column);
+	grid-template-rows: repeat($row, $size-row);
+	gap: $gap;
+}
+
+@mixin flex-column($gap: 0) {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+}
+
+@mixin fw-c($gap: 0) {
+	@extend %fw-c;
+
+	gap: $gap * 1px;
+}
+
+@mixin fw-sb($gap: 0) {
+	@extend %fw-sb;
+
+	gap: $gap * 1px;
+}

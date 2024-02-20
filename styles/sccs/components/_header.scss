@@ -1,0 +1,84 @@
+.header {
+	padding: 20px 0;
+	background: $main-bg;
+	&__menu {
+		@extend %fw-sb;
+
+		&-logo {
+			@include fw-c(11);
+
+			transition: all 0.4s linear;
+
+			&:hover,
+			&:focus {
+				.header__menu-logo-text {
+					color: $accent-clr;
+				}
+
+				&:active {
+					.header__menu-logo-text {
+						color: $active-clr;
+					}
+				}
+			}
+
+			&-text {
+				color: $logo-clr;
+				font-size: 20px;
+				font-weight: 500;
+
+				transition: all 0.3s linear;
+			}
+		}
+
+		&-list {
+			@include fw-c(55);
+		}
+
+		&-link {
+			transition: all 0.3s linear;
+
+			&:hover,
+			&:focus {
+				color: $accent-clr;
+				opacity: 0.8;
+			}
+
+			&:active {
+				color: $active-clr;
+				border-bottom: 1px solid $active-clr;
+			}
+		}
+	}
+}
+
+//
+
+//
+
+/////////////////////////////////////////// Media
+
+@media (max-width: 999px) {
+	.header {
+		&__menu-logo {
+			&-text {
+				font-size: clamp(0.938rem, 0.273rem + 1.563vw, 1.25rem);
+			}
+
+			&-img {
+				width: 30px;
+			}
+		}
+
+		&__menu-list {
+			font-size: clamp(0.875rem, 0.477rem + 0.938vw, 1.063rem);
+			gap: clamp(1.875rem, -1.445rem + 7.813vw, 3.438rem);
+		}
+	}
+}
+
+@media (max-width: 680px) {
+	.header__menu-list {
+		display: none;
+	}
+}
